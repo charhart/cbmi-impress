@@ -52,6 +52,14 @@
 				padding-bottom: 2px;
 
 			}
+
+            .iframe {
+                background: white;
+            }
+
+            .dark-iframe {
+                background: black;
+            }
         </style>
         <link type="text/html" href="css/bootstrap.flatly.min.css"/>
     </head>
@@ -63,16 +71,42 @@
             <div id="start" class="step"  data-transition-duration="10000">
                 <h1>Welcome to CBMI</h1>
                 <p><img src="images/regenstrief.png" height="100"/> </p>
-                <p class='hint_text'>Press <em>Spacebar</em> or Tab to Navigate</p>
+                <p class='hint_text'>Press <em>Spacebar</em> or Tab to Navigate (or wait for the Timer)</p>
+            </div>
+            <!--left to right-->
+            <div id="announcement" class="step" data-x="-2000">
+                <h1>Announcements</h1>
+                    <div>We're trying out a new presentation library, impress.js!</div>
+                    <div>We'll try to keep all the stuff you like, but with all the cool features of being web-driven.</div>
+                    <br/>
+                    <div>Find us at <a href="https://github.com/cahilton/cbmi-impress">https://github.com/cahilton/cbmi-impress</a></div>
+            </div>
+            <!--right to left-->
+           <div id="g3monitor" class="step" data-x="2000" data-transition-duration="120000">
+               <div>
+
+                   <iframe class="iframe" src="https://gopher-monitor.regenstrief.org/g3_perf4j_event_monitor_v2.php" frameBorder="0"></iframe>
+               </div>
+           </div>
+            <div id="nlpviz" class="step" data-x="-4000"  data-transition-duration="60000">
+                <div>
+
+                    <iframe class="iframe dark-iframe" src="slides/nlp-tumor-progression/chart_progression.html" frameBorder="0"></iframe>
+                </div>
             </div>
 
-            <div id="slide1" class="step" data-x="-2000">
-                <h1>Announcements</h1>
-            </div>
             <!--
-                       <div id="slide2" class="step" data-x="1200">
-                           <p>This Slide Moves From Right To Left</p>
-                       </div>
+
+                If you want to add a new slide, follow the pattern above
+                Things in slides do not get committed to get, but you can use them on the file system
+                You'll have to follow the impress.js coordinates - look for examples here https://github.com/bartaz/impress.js/wiki/Examples-and-demos
+                For more impress.js transitions, look at the doc, or some more examples below
+
+            -->
+
+
+
+            <!--
 
                        <div id="slide3" class="step" data-x="2200" data-y="500">
                            <p>This Slide Moves From Right To Left and Bottom To Top</p>

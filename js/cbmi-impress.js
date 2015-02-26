@@ -20,5 +20,9 @@ $(document).ready(function(){
         var duration = (e.target.getAttribute('data-transition-duration') ? e.target.getAttribute('data-transition-duration') : defaultTime);
         timing = setInterval(impress.next, duration);
     });
+
+    $(".iframe")
+        .attr("width", $(window).outerWidth())
+        .attr("height", $(window).outerHeight());
 });
 
