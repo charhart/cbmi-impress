@@ -21,8 +21,16 @@ $(document).ready(function(){
         timing = setInterval(impress.next, duration);
     });
 
-    $(".iframe")
-        .attr("width", $(window).outerWidth())
-        .attr("height", $(window).outerHeight());
+   function resetIframe() {
+       $(".iframe")
+           .attr("width", $(window).outerWidth())
+           .attr("height", $(window).outerHeight());
+    }
+
+    resetIframe();
+
+    $( window ).resize(function() {
+        resetIframe();
+    });
 });
 
