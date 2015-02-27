@@ -31,7 +31,7 @@ $(document).ready(function(){
     }
     
     function refreshIFrame() {
-        $("iframe-refresh").attr("src", function() {
+        $(".iframe-refresh").attr("src", function() {
            return $(this).attr("src"); 
         });
     }
