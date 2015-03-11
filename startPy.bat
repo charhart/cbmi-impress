@@ -1,1 +1,1 @@
-C:\Python27\python.exe SimpleHttpServer
+C:\Python27\python.exe -m SimpleHTTPServer
