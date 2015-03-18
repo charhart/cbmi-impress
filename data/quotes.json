@@ -16,6 +16,10 @@
     "author" : "Martin Fowler"
   },
   {
+    "quote" : "You may encounter many defeats, but you must not be defeated. In fact, it may be necessary to encounter the defeats, so you can know who you are, what you can rise from, how you can still come out of it.",
+    "author" : "Maya Angelou"
+  },
+  {
     "quote" : "Ease of use with equivalent performance varies with the square root of the cost of development. That means that to design a computer that's ten times easier to use would cost 100 times as much.",
     "author" : "Robert Cringeley"
   },
@@ -34,6 +38,10 @@
   {
     "quote" : "Your assumptions are your windows on the world. Scrub them off every once in a while, or the light won't come in.",
     "author" : "Isaac Asimov"
+  },
+  {
+    "quote" : "When it comes to creative inspiration, job titles and hierarchy are meaningless.",
+    "author" : "Ed Catmull, President of Pixar, Inc. and Disney Animation"
   },
   {
     "quote" : "Creativity is intelligence having fun.",
@@ -64,6 +72,10 @@
     "author" : "Eleanor Roosevelt"
   },
   {
+    "quote" : "Sometimes when you innovate, you make mistakes. It is best to admit them quickly, and get on with improving your other innovations.",
+    "author" : "Steve Jobs"
+  },
+  {
     "quote" : "If I had asked people what they wanted, they would have said faster horses.",
     "author" : "Henry Ford"
   },
@@ -84,7 +96,39 @@
     "author" : "Ken Thompson"
   },
   {
+    "quote" : "It takes a huge effort to free yourself from memory, but when you succeed, you start to realize that you're capable of far more than you imagined.",
+    "author" : "Paulo Coelho"
+  },
+  {
     "quote" : "Failure is simply the opportunity to begin again, this time more intelligently.",
     "author" : "Henry Ford"
+  },
+  {
+    "quote" : "You may say I'm a dreamer, but I'm not the only one.",
+    "author" : "John Lennon"
+  },
+  {
+    "quote" : "Any sufficiently advanced technology is equivalent to magic.",
+    "author" : "Arthur C. Clarke"
+  },
+  {
+    "quote" : "Just because something doesn’t do what you planned it to do doesn’t mean it’s useless.",
+    "author" : "Thomas Edison"
+  },
+  {
+    "quote" : "Computers are useless. They can only give you answers.",
+    "author" : "Pablo Picasso"
+  },
+  {
+    "quote" : "The art challenges the technology, and the technology inspires the art. ",
+    "author" : "John Lasseter"
+  },
+  {
+    "quote" : "Never stand begging for that which you have the power to earn.",
+    "author" : "Miguel de Cervantes"
+  },
+  {
+    "quote" : "If you fell down yesterday, stand up today.",
+    "author" : "H.G. Wells"
   }
 ]

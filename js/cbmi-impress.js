@@ -35,6 +35,10 @@ $(document).ready(function(){
             .css("width", "90%")
             .css("height", "auto");
     }
+
+    function resizeOther() {
+        $("#ken-codepen").attr("data-height", $(window).outerHeight());
+    }
     
     function refreshIFrame() {
         $(".iframe-refresh").attr("src", function() {
@@ -74,6 +78,7 @@ $(document).ready(function(){
     // do resizing
     resizePoster();
     resizeIFrame();
+    resizeOther();
 
     // startup timer
     setInterval(function() {
@@ -122,6 +127,8 @@ $(document).ready(function(){
 
     $( window ).resize(function() {
         resizeIFrame();
+        resizePoster();
+        resizeOther();
     });
 });
 
