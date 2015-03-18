@@ -31,9 +31,9 @@ $(document).ready(function(){
     }
 
     function resizePoster() {
-        // $("#posterSrc")
-        //     .css("width", $(window).outerWidth())
-        //     .css("height", "auto");
+        $("#posterSrc")
+            .css("width", "90%")
+            .css("height", "auto");
     }
     
     function refreshIFrame() {
