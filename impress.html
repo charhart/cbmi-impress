@@ -2,6 +2,7 @@
     <head>
         <title>Regenstrief CBMI</title>
         <link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
         <style>
             body{
                 width:1024px;
@@ -93,32 +94,36 @@
             <!--left to right-->
             <div id="about" class="step" data-x="-4000">
                 <h1>About This</h1>
-                    <div>We're trying out a new presentation library, impress.js!</div>
-                    <div>We'll try to keep all the stuff you like, but with all the cool features of being web-driven.</div>
+                    <div>Find us on GitHub at <a href="https://github.com/cahilton/cbmi-impress">https://github.com/cahilton/cbmi-impress</a></div>
                     <br/>
-                    <div>Find us at <a href="https://github.com/cahilton/cbmi-impress">https://github.com/cahilton/cbmi-impress</a></div>
+                    <div>If you have an idea for this board, contact Charity, <a href="mailto:cahilton@regenstrief.org">cahilton@regenstrief.org</a> or just contribute to the repo!</div>
             </div>
-            <div id="announcements" class="step" data-x="4000">
-                <h1>Announcements</h1>
-                <div class="announcement">
-                    <strong>Gopher 3.39 (3/3/15)</strong> - <br/>GPI (Pharmacy Interface) - Phase 2 - The IV Meds
-                    </div>
-                <div class="announcement">
-                    <strong>Gopher 3.40 (3/23/15)</strong> - <br/>Core 3.1 migration, <span class="important">Legacy Careweb Retirement</span>
+            <div id="announcements" class="step" data-x="4000" data-transition-duration="60000" style="font-family: 'Lato', sans-serif;">
+                <h1 style="text-decoration: underline">Announcements</h1>
+                <div id="announcements-wrapper" style="padding-top: 20px">
+                    <h3 id="announcement" style="font-size:150%"></h3>
+                    <blockquote id="subtext"></blockquote>
                 </div>
             </div>
             <!--right to left-->
-           <div id="g3monitor" class="step" data-x="-8000" data-transition-duration="120000">
+           <div id="g3monitor" class="step" data-x="-8000" data-transition-duration="360000">
                <div>
-
                    <iframe class="iframe iframe-refresh" src="https://gopher-monitor.regenstrief.org/g3_perf4j_event_monitor_v2.php" frameBorder="0"></iframe>
                </div>
            </div>
             <div id="nlpviz" class="step" data-x="8000"  data-transition-duration="120000">
                 <div>
-
                     <iframe class="iframe dark-iframe" src="slides/nlpresearch/tumorprogression/src/main/resources/chart_progression.html" frameBorder="0"></iframe>
                 </div>
+            </div>
+            <div id="quotes" class="step" data-x="-10000"  data-transition-duration="60000">
+                <div id="quotes-wrapper">
+                    <blockquote id="quote" style="font-size:150%"></blockquote>
+                    <p>-<span id="quote-attribute"></span></p>
+                </div>
+            </div>
+            <div id="posters" class="step" data-x="10000"  data-transition-duration="60000" class="dark-iframe">
+                <img id="posterSrc" src="" />
             </div>
 
             <!--
