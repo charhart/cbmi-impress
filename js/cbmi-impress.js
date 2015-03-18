@@ -31,7 +31,7 @@ $(document).ready(function(){
     }
 
     function resizePoster() {
-        $(".iframe")
+        $("#posterSrc")
             .css("width", $(window).outerWidth())
             .css("height", "auto");
     }
