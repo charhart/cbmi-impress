@@ -10,5 +10,77 @@
   {
     "quote" : "The hierarchy will begin to reinforce its own structure by hiring people who fit its shape, adding people to fill subordinate support roles.",
     "author" : "The Valve Employee Handbook, Developers of Half-Life, Portal, Left 4 Dead and Steam"
+  },
+  {
+    "quote" : "...if you're afraid to change something it is clearly poorly designed.",
+    "author" : "Martin Fowler"
+  },
+  {
+    "quote" : "Ease of use with equivalent performance varies with the square root of the cost of development. That means that to design a computer that's ten times easier to use would cost 100 times as much.",
+    "author" : "Robert Cringeley"
+  },
+  {
+    "quote" : "Someone’s misfortune can become someone else’s luck.",
+    "author" : "Sam Regenstrief"
+  },
+  {
+    "quote" : "Requirements are like water. They're easier to build on when they're frozen.",
+    "author" : "Anonymous"
+  },
+  {
+    "quote" : "... with proper design, the features come cheaply. This approach is arduous, but continues to succeed.",
+    "author" : "Dennis Ritchie"
+  },
+  {
+    "quote" : "Your assumptions are your windows on the world. Scrub them off every once in a while, or the light won't come in.",
+    "author" : "Isaac Asimov"
+  },
+  {
+    "quote" : "Creativity is intelligence having fun.",
+    "author" : "Albert Einstein"
+  },
+  {
+    "quote" : "Restlessness is discontent — and discontent is the first necessity of progress. Show me a thoroughly satisfied man — and I will show you a failure.",
+    "author" : "Thomas Edison"
+  },
+  {
+    "quote" : "There are many ways of going forward, but only one way of standing still",
+    "author" : "Franklin D. Roosevelt"
+  },
+  {
+    "quote" : "An idea that is not dangerous is unworthy of being called an idea at all.",
+    "author" : "Oscar Wilde"
+  },
+  {
+    "quote" : "You don’t build it for yourself. You know what the people want and you build it for them.",
+    "author" : "Walt Disney"
+  },
+  {
+    "quote" : "The kind of environment that we developed Google in, the reason that we were able to develop a search engine, is the web was so open. Once you get too many rules, that will stifle innovation.",
+    "author" : "Sergey Brin"
+  },
+  {
+    "quote" : "You must do the thing you think you cannot do.",
+    "author" : "Eleanor Roosevelt"
+  },
+  {
+    "quote" : "If I had asked people what they wanted, they would have said faster horses.",
+    "author" : "Henry Ford"
+  },
+  {
+    "quote" : "Because, you know, resilience – if you think of it in terms of the Gold Rush, then you’d be pretty depressed right now because the last nugget of gold would be gone. But the good thing is, with innovation, there isn’t a last nugget. Every new thing creates two new questions and two new opportunities.",
+    "author" : "Jeff Bezos"
+  },
+  {
+    "quote" : "The most important property of a program is whether it accomplishes the intention of its user.",
+    "author" : "C.A.R. Hoare"
+  },
+  {
+    "quote" : "Measuring programming progress by lines of code is like measuring aircraft building progress by weight.",
+    "author" : "Bill Gates"
+  },
+  {
+    "quote" : "One of my most productive days was throwing away 1000 lines of code.",
+    "author" : "Ken Thompson"
   }
 ]
