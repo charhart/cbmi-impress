@@ -1,11 +1,23 @@
 [
   {
+    "quote" : "Someone’s misfortune can become someone else’s luck.",
+    "author" : "Sam Regenstrief"
+  },
+  {
+    "quote" : "If you tell the truth, you don't have to remember anything",
+    "author" : "Mark Twain"
+  },
+  {
     "quote": "If you aren’t experiencing failure, then you are making a far worse mistake: You are being driven by the desire to avoid it.",
     "author" : "Ed Catmull, President of Pixar, Inc. and Disney Animation"
   },
   {
     "quote" : "It's really hard to design products by focus groups. A lot of times, people don't know what they want until you show it to them.",
     "author" : "Steve Jobs"
+  },
+  {
+    "quote" : "If you wish to make an apple pie from scratch, you must first invent the universe",
+    "author" : "Carl Sagan"
   },
   {
     "quote" : "The hierarchy will begin to reinforce its own structure by hiring people who fit its shape, adding people to fill subordinate support roles.",
@@ -16,16 +28,16 @@
     "author" : "Martin Fowler"
   },
   {
+    "quote" : "An expert is a person who has made all the mistakes that can be made in a very narrow field.",
+    "author" : "Niels Bohr"
+  },
+  {
     "quote" : "You may encounter many defeats, but you must not be defeated. In fact, it may be necessary to encounter the defeats, so you can know who you are, what you can rise from, how you can still come out of it.",
     "author" : "Maya Angelou"
   },
   {
     "quote" : "Ease of use with equivalent performance varies with the square root of the cost of development. That means that to design a computer that's ten times easier to use would cost 100 times as much.",
     "author" : "Robert Cringeley"
-  },
-  {
-    "quote" : "Someone’s misfortune can become someone else’s luck.",
-    "author" : "Sam Regenstrief"
   },
   {
     "quote" : "Requirements are like water. They're easier to build on when they're frozen.",
@@ -38,6 +50,10 @@
   {
     "quote" : "Your assumptions are your windows on the world. Scrub them off every once in a while, or the light won't come in.",
     "author" : "Isaac Asimov"
+  },
+  {
+    "quote" : "A day without sunshine is like, you know, night",
+    "author" : "Steve Martin"
   },
   {
     "quote" : "When it comes to creative inspiration, job titles and hierarchy are meaningless.",
@@ -88,6 +104,10 @@
     "author" : "C.A.R. Hoare"
   },
   {
+    "quote" : "It is our choices, Harry, that show what we truly are, far more than our abilities",
+    "author" : "J.K. Rowling, Harry Potter and the Chamber of Secrets"
+  },
+  {
     "quote" : "Measuring programming progress by lines of code is like measuring aircraft building progress by weight.",
     "author" : "Bill Gates"
   },
@@ -102,6 +122,10 @@
   {
     "quote" : "Failure is simply the opportunity to begin again, this time more intelligently.",
     "author" : "Henry Ford"
+  },
+  {
+    "quote" : "Don't spend time beating on a wall, hoping to transform it into a door. ",
+    "author" : "Coco Chanel"
   },
   {
     "quote" : "You may say I'm a dreamer, but I'm not the only one.",
@@ -130,5 +154,37 @@
   {
     "quote" : "If you fell down yesterday, stand up today.",
     "author" : "H.G. Wells"
+  },
+  {
+    "quote" : "We keep moving forward, opening new doors, and doing new things, because we’re curious and curiosity keeps leading us down new paths.",
+    "author" : "Walt Disney"
+  },
+  {
+    "quote" : "Luck is not a factor. Hope is not a strategy. Fear is not an option.",
+    "author" : "James Cameron"
+  },
+  {
+    "quote" : "Plans are of little importance, but planning is essential.",
+    "author" : "Winston Churchill"
+  },
+  {
+    "quote" : "I love deadlines. I love the whooshing noise they make as they go by.",
+    "author" : "Douglas Adams"
+  },
+  {
+    "quote" : "In the twenty-first century, power is easier to get, harder to use—and easier to lose.",
+    "author" : "Moisés Naím, The End of Power"
+  },
+  {
+    "quote" : "Never memorize something that you can look up.",
+    "author" : "Albert Einstein"
+  },
+  {
+    "quote" : "There are no secrets to success. It is the result of preparation, hard work, and learning from failure.",
+    "author" : "Colin Powell"
+  },
+  {
+    "quote" : "Don't cry because it's over, smile because it happened.",
+    "author" : "Dr. Seuss"
   }
 ]
