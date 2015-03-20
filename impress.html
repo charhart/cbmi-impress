@@ -11,6 +11,7 @@
 				color: #454545;
 				text-shadow: 1px 1px 2px #787878;
                 background: url(images/hoffman.png);
+                margin: 0px;
             }
 
 
@@ -78,11 +79,29 @@
             .announcement {
                 padding-bottom: 30px;
             }
+
+            #nav {
+                height: auto;
+                width: 50px;
+                position: fixed;
+                left: 3px;
+                top: 3px;
+                z-index: 100;
+            }
+
+            .nav-links {
+                font-size: 12px;
+                cursor: pointer;
+                color: #456775;
+            }
         </style>
         <link type="text/html" href="css/bootstrap.flatly.min.css"/>
     </head>
     <body class="impress-not-supported">
-
+        <div id="nav">
+            <a class="nav-links" id="prev">&laquo;</a>
+            <a class="nav-links" id="next">&raquo;</a>
+        </div>
 
 
         <div id="impress">
@@ -122,12 +141,12 @@
                     <p>-<span id="quote-attribute"></span></p>
                 </div>
             </div>
-            <div id="posters" class="step" data-x="10000"  data-transition-duration="60000" class="dark-iframe">
+            <div id="posters" class="step" data-x="10000"  data-transition-duration="60000">
                 <img id="posterSrc" src="" />
             </div>
             <div id="allocations" class="step" data-x="-12000"  data-transition-duration="120000">
                 <div>
-                    <iframe class="iframe" src="slides/allocation/index.html" frameBorder="0"></iframe>
+                    <iframe class="iframe iframe-resize" src="slides/allocation/index.html" frameBorder="0"></iframe>
                 </div>
             </div>
 

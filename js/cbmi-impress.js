@@ -37,7 +37,16 @@ $(document).ready(function(){
     }
 
     function resizeOther() {
-        $("#ken-codepen").attr("data-height", $(window).outerHeight());
+        //$("#ken-codepen").attr("data-height", $(window).outerHeight());
+
+
+        $("#nav")
+            .css("left", $(window).outerWidth() - 50)
+            .css("top", 0);
+
+        $(".iframe-resize").attr("src", function() {
+            return $(this).attr("src");
+        });
     }
     
     function refreshIFrame() {
@@ -45,6 +54,7 @@ $(document).ready(function(){
            return $(this).attr("src"); 
         });
     }
+
 
     // quotes
     var quotes = [];
@@ -125,10 +135,18 @@ $(document).ready(function(){
         }
     }, 15000);
 
+    $("#prev").click(function(){
+        impress.prev();
+    });
+    $("#next").click(function(){
+        impress.next();
+    });
+
     $( window ).resize(function() {
         resizeIFrame();
         resizePoster();
         resizeOther();
     });
+
 });
 
