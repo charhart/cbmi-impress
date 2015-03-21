@@ -8,6 +8,12 @@ Obviously impress allows for some more complexity, but I've just been moving alo
 monitor size). It should be pretty straightforward to see what I'm doing. This runs on a Python HTTP server, so we make HTTP calls
 from local sub-pages.
 
+### Getting it Running
+This is a web application written in python using a framework called Flask. Make sure flask is installed using 
+`pip install Flask`
+
+Once complete, start the webapp using `python main.py`
+
 ### Order
 Based on the order in the html. Each div has a class `step`.
 
