@@ -1,4 +1,4 @@
-var defaultTime = 20000;
+var defaultTime = 30000;
 var impress = impress();
 
 
