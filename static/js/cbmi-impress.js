@@ -21,6 +21,12 @@ $(document).ready(function(){
         if (typeof timing !== 'undefined') clearInterval(timing);
         // use the set duration or fallback to default
         var duration = (e.target.getAttribute('data-transition-duration') ? e.target.getAttribute('data-transition-duration') : defaultTime);
+        var tgt = $(e.target);
+        if (tgt.hasClass("step-time")) {
+            $("#timeDiv").fadeIn();
+        } else {
+            $("#timeDiv").fadeOut();
+        }
         timing = setInterval(impress.next, duration);
     });
 
@@ -59,7 +65,7 @@ $(document).ready(function(){
     // quotes
     var quotes = [];
     var currentQuote, totalQuotes;
-    $.getJSON( "data/quotes.json", function( data ) {
+    $.getJSON( "../static/data/quotes.json", function( data ) {
        quotes = data;
         currentQuote = 0;
         totalQuotes = quotes.length;
@@ -70,7 +76,7 @@ $(document).ready(function(){
     // announcements
     var announcements = [];
     var currentAnnouncement, totalAnnouncements;
-    $.getJSON( "data/announcements.json", function( data ) {
+    $.getJSON( "../static/data/announcements.json", function( data ) {
         announcements = data;
         currentAnnouncement = 0;
         totalAnnouncements = announcements.length;
@@ -83,7 +89,7 @@ $(document).ready(function(){
         "2014-03-25 Joint Summits Colonoscopy.pptx 2015-03-18 10-15-28.jpg"
     ];
     var currentPoster = 0, totalPosters = posters.length;
-    $("#posterSrc").attr("src", "posters/" + posters[0]);
+    $("#posterSrc").attr("src", "../static/posters/" + posters[0]);
 
     // do resizing
     resizePoster();
@@ -133,7 +139,41 @@ $(document).ready(function(){
 
 
         }
+
+
     }, 15000);
+
+    setInterval(function() {
+        if ($(".iframe-refresh-often").is(":visible")) {
+            $(".iframe-refresh-often:visible").attr("src", function () {
+                return $(this).attr("src");
+            });
+        }
+    }, 30000);
+
+    /*
+    function checkTime(i) {
+        return (i < 10) ? "0" + i : i;
+    }
+
+    var timeTimout;
+    function startTime() {
+        var today = new Date(),
+            h = checkTime(today.getHours()),
+            m = checkTime(today.getMinutes()),
+            s = checkTime(today.getSeconds());
+
+        var ampm = h >= 12 ? 'pm' : 'am';
+        h = h % 12;
+        h = h ? h : 12; // the hour '0' should be '12'
+        m = m < 10 ? '0'+m : m;
+        document.getElementById('time').innerHTML = h + ":" + m + ":" + s + ' ' + ampm;
+        timeTimout = setTimeout(function () {
+            startTime()
+        }, 500);
+    }
+    startTime();
+    */
 
     $("#prev").click(function(){
         impress.prev();

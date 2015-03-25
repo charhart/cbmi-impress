@@ -10,7 +10,7 @@
                 font-family: 'Raleway', sans-serif;
 				color: #454545;
 				text-shadow: 1px 1px 2px #787878;
-                background: url(images/hoffman.png);
+                background: url(../static/images/hoffman.png);
                 margin: 0px;
             }
 
@@ -94,30 +94,50 @@
                 cursor: pointer;
                 color: #456775;
             }
+
+            #timeDiv {
+                height: auto;
+                width: 150px;
+                position: fixed;
+                left: 5px;
+                top: 5px;
+                z-index: 100;
+                color: #456775;
+                font-size: 30px;
+            }
         </style>
-        <link type="text/html" href="css/bootstrap.flatly.min.css"/>
+        <link type="text/html" href="../static/style/bootstrap.flatly.min.css"/>
     </head>
     <body class="impress-not-supported">
         <div id="nav">
             <a class="nav-links" id="prev"> &laquo; </a>
             <a class="nav-links" id="next"> &raquo; </a>
         </div>
+        <div id="timeDiv" >
+           <!-- <h4 id="time" style="padding:0;margin: 0"></h4>-->
+
+            <a href="http://www.accuweather.com/en/us/indianapolis-in/46204/weather-forecast/348323" class="aw-widget-legal">
+                <!--
+                By accessing and/or using this code snippet, you agree to AccuWeather’s terms and conditions (in English) which can be found at http://www.accuweather.com/en/free-weather-widgets/terms and AccuWeather’s Privacy Statement (in English) which can be found at http://www.accuweather.com/en/privacy.
+                -->
+            </a><div id="awcc1427301809679" class="aw-widget-current"  data-locationkey="" data-unit="f" data-language="en-us" data-useip="true" data-uid="awcc1427301809679"></div><script type="text/javascript" src="http://oap.accuweather.com/launch.js"></script>
+        </div>
 
 
         <div id="impress">
-            <div id="start" class="step"  data-transition-duration="10000">
+            <div id="start" class="step step-time"  data-transition-duration="10000">
                 <h1>Welcome to CBMI</h1>
-                <p><img src="images/regenstrief.png" height="100"/> </p>
+                <p><img src="../static/images/regenstrief.png" height="100"/> </p>
                 <p class='hint_text'>Press <em>Spacebar</em> or Tab to Navigate (or wait for the Timer)</p>
             </div>
             <!--left to right-->
-            <div id="about" class="step" data-x="-4000">
+            <div id="about" class="step step-time" data-x="-4000">
                 <h1>About This</h1>
                     <div>Find us on GitHub at <a href="https://github.com/cahilton/cbmi-impress">https://github.com/cahilton/cbmi-impress</a></div>
                     <br/>
                     <div>If you have an idea for this board, contact Charity, <a href="mailto:cahilton@regenstrief.org">cahilton@regenstrief.org</a> or just contribute to the repo!</div>
             </div>
-            <div id="announcements" class="step" data-x="4000" data-transition-duration="60000" style="font-family: 'Lato', sans-serif;">
+            <div id="announcements" class="step step-time" data-x="4000" data-transition-duration="60000" style="font-family: 'Lato', sans-serif;">
                 <h1 style="text-decoration: underline">Announcements</h1>
                 <div id="announcements-wrapper" style="padding-top: 20px">
                     <h3 id="announcement" style="font-size:150%"></h3>
@@ -125,28 +145,28 @@
                 </div>
             </div>
             <!--right to left-->
-           <div id="g3monitor" class="step" data-x="-8000" data-transition-duration="300000">
+           <div id="g3monitor" class="step" data-x="-8000" data-transition-duration="480000">
                <div>
-                   <iframe class="iframe iframe-refresh" src="https://gopher-monitor.regenstrief.org/g3_perf4j_event_monitor_v2.php" frameBorder="0"></iframe>
+                   <iframe class="iframe iframe-refresh iframe-refresh-often" src="https://gopher-monitor.regenstrief.org/g3_perf4j_event_monitor_v2.php" frameBorder="0"></iframe>
                </div>
            </div>
-            <div id="nlpviz" class="step" data-x="8000"  data-transition-duration="60000">
+            <div id="nlpviz" class="step" data-x="8000"  data-transition-duration="30000">
                 <div>
-                    <iframe class="iframe dark-iframe" src="slides/nlpresearch/tumorprogression/src/main/resources/chart_progression.html" frameBorder="0"></iframe>
+                    <iframe class="iframe dark-iframe" src="../static/slides/nlpresearch/tumorprogression/src/main/resources/chart_progression.html" frameBorder="0"></iframe>
                 </div>
             </div>
-            <div id="quotes" class="step" data-x="-10000"  data-transition-duration="90000">
+            <div id="quotes" class="step step-time" data-x="-10000"  data-transition-duration="30000">
                 <div id="quotes-wrapper">
                     <blockquote id="quote" style="font-size:150%"></blockquote>
                     <p>-<span id="quote-attribute"></span></p>
                 </div>
             </div>
-            <div id="posters" class="step" data-x="10000"  data-transition-duration="60000">
+            <div id="posters" class="step" data-x="10000"  data-transition-duration="30000">
                 <img id="posterSrc" src="" />
             </div>
-            <div id="allocations" class="step" data-x="-12000"  data-transition-duration="120000">
+            <div id="allocations" class="step" data-x="-12000"  data-transition-duration="900000">
                 <div>
-                    <iframe class="iframe iframe-resize" src="slides/allocation/index.html" frameBorder="0"></iframe>
+                    <iframe class="iframe iframe-resize" src="../static/slides/allocation/index.html" frameBorder="0"></iframe>
                 </div>
             </div>
 
@@ -203,9 +223,9 @@
         </div>
 
 
-        <script type="text/javascript" src="js/impress.js"></script>
-        <script type="text/javascript" src="js/jquery/jquery.js"></script>
-        <script type="text/javascript" src="js/cbmi-impress.js"></script>
+        <script type="text/javascript" src="../static/js/js/impress.js"></script>
+        <script type="text/javascript" src="../static/js/jquery/jquery.js"></script>
+        <script type="text/javascript" src="../static/js/cbmi-impress.js"></script>
 
 
     </body>
