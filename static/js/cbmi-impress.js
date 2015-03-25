@@ -62,6 +62,8 @@ $(document).ready(function(){
     }
 
 
+
+
     // quotes
     var quotes = [];
     var currentQuote, totalQuotes;
@@ -149,7 +151,46 @@ $(document).ready(function(){
                 return $(this).attr("src");
             });
         }
+
     }, 30000);
+
+    var af = false;
+    if (af) {
+        $("#afDiv").width($(document).outerWidth());
+        $("#af").attr("src", "../static/images/4-1/gop.gif");
+        var imgs = ["gop.gif", "mk.png", "rw.png"];
+        var afTimeout = 15000;
+
+        setInterval(function () {
+
+            var ran = Math.floor((Math.random() * (imgs.length)));
+            $("#af").attr("src", "../static/images/4-1/" + imgs[ran]);
+
+            afTimeout = Math.floor((Math.random() * 100) + 15) * 1000;
+            var left = Math.floor((Math.random() * ($(document).outerWidth() / 3)) + 1);
+            console.log(ran + " " + imgs[ran] + " " + left + " " + afTimeout);
+            $("#afDiv").css("left", left);
+
+            $("#afDiv").animate({
+                opacity: 1,
+                height: "toggle"
+            }, 500, function () {
+                // Animation complete.
+            });
+            setTimeout(function () {
+                $("#afDiv").animate({
+                    opacity: 0,
+                    height: "toggle"
+                }, 500, function () {
+                    // Animation complete.
+                });
+
+
+            }, 1000);
+
+
+        }, afTimeout);
+    }
 
     /*
     function checkTime(i) {

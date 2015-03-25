@@ -105,6 +105,15 @@
                 color: #456775;
                 font-size: 30px;
             }
+
+            #afDiv {
+                height: auto;
+                width: 100%;
+                left: 0px;
+                bottom: 0px;
+                position: fixed;
+                z-index: 400;
+            }
         </style>
         <link type="text/html" href="../static/style/bootstrap.flatly.min.css"/>
     </head>
@@ -121,6 +130,10 @@
                 By accessing and/or using this code snippet, you agree to AccuWeather’s terms and conditions (in English) which can be found at http://www.accuweather.com/en/free-weather-widgets/terms and AccuWeather’s Privacy Statement (in English) which can be found at http://www.accuweather.com/en/privacy.
                 -->
             </a><div id="awcc1427301809679" class="aw-widget-current"  data-locationkey="" data-unit="f" data-language="en-us" data-useip="true" data-uid="awcc1427301809679"></div><script type="text/javascript" src="http://oap.accuweather.com/launch.js"></script>
+        </div>
+        <div id="afDiv" style="display: none">
+
+            <img src="" id="af" />
         </div>
 
 
