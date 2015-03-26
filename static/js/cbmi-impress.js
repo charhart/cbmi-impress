@@ -154,11 +154,15 @@ $(document).ready(function(){
 
     }, 30000);
 
-    var af = false;
+    var today = new Date();
+    var dayOfMonth = today.getDate(),
+        month = today.getMonth() + 1
+    var af = (month === 4 && dayOfMonth === 1);
     if (af) {
         $("#afDiv").width($(document).outerWidth());
         $("#af").attr("src", "../static/images/4-1/gop.gif");
-        var imgs = ["gop.gif", "mk.png", "rw.png"];
+        var imgs = ["gop.gif", "mk.png", "rw.png", "ch.gif", "hs.png", "af.png",
+            "sc.png", "wf.jpg", "sb.png", "hc.png", "hk.gif", "kc.png"];
         var afTimeout = 15000;
 
         setInterval(function () {
@@ -166,15 +170,14 @@ $(document).ready(function(){
             var ran = Math.floor((Math.random() * (imgs.length)));
             $("#af").attr("src", "../static/images/4-1/" + imgs[ran]);
 
-            afTimeout = Math.floor((Math.random() * 100) + 15) * 1000;
-            var left = Math.floor((Math.random() * ($(document).outerWidth() / 3)) + 1);
-            console.log(ran + " " + imgs[ran] + " " + left + " " + afTimeout);
-            $("#afDiv").css("left", left);
+            afTimeout = Math.floor((Math.random() * 60) + 15) * 1000;
+            console.log(imgs[ran] + ' ' + afTimeout);
+            adjustPosition($("#afDiv"));
 
             $("#afDiv").animate({
                 opacity: 1,
                 height: "toggle"
-            }, 500, function () {
+            }, 1000, function () {
                 // Animation complete.
             });
             setTimeout(function () {
@@ -186,10 +189,61 @@ $(document).ready(function(){
                 });
 
 
-            }, 1000);
+            }, 1500);
 
 
         }, afTimeout);
+    }
+
+    function adjustPosition(elem) {
+
+        var r = Math.round(Math.random()*3);
+
+        var left = Math.floor((Math.random() * ($(window).outerWidth()/2)) + 1);
+        var bottom = Math.floor((Math.random() * ($(window).outerHeight()/2)) + 1);
+
+        var degree = 0;
+
+
+        if (r === 0) {
+            // top
+            //console.log('top');
+            elem.css("left", left)
+                .css("bottom", 'auto')
+                .css("top", -10)
+                .css("right",  'auto');
+            degree = 180;
+        } else if (r === 1) {
+            // right
+            //console.log('right');
+            elem.css("left",  'auto')
+                .css("top", bottom)
+                .css("bottom",  'auto')
+                .css("right", 0);
+            degree = 270;
+        } else if (r === 2) {
+            // bottom
+            //console.log('bottom');
+            elem.css("left", left)
+                .css("bottom", -10)
+                .css("top",  'auto')
+                .css("right",  'auto');
+            degree = 0;
+        } else if (r === 3) {
+            // left
+            //console.log('left');
+            elem.css("left", -10)
+                .css("top", bottom)
+                .css("bottom",  'auto')
+                .css("right",  'auto');
+            degree = 90;
+        }
+
+        elem.find("img")
+            .css("-ms-transform", "rotate(" + degree + "deg)")
+            .css("-webkit-transform", "rotate(" + degree + "deg)")
+            .css("transform", "rotate(" + degree + "deg)")
+
     }
 
     /*
