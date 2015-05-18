@@ -1,16 +1,21 @@
 <html lang="en">
     <head>
         <title>Regenstrief CBMI</title>
-        <link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Playfair+Display:400,700|Belgrano|Crete+Round|IM+Fell+French+Canon+SC|Alegreya:400,700|Cutive' rel='stylesheet' type='text/css'>
         <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
         <style>
             body{
                 width:1024px;
                 font-size: 36px;
-                font-family: 'Raleway', sans-serif;
+                font-family: 'Playfair Display', serif;
 				color: #454545;
 				text-shadow: 1px 1px 2px #787878;
-                background: url(../static/images/hoffman.png);
+               /* background: url(../static/images/hoffman.png); */
+                background: url(../static/images/bokeh3.jpg) no-repeat center center fixed;
+                -webkit-background-size: cover;
+                -moz-background-size: cover;
+                -o-background-size: cover;
+                background-size: cover;
                 margin: 0px;
             }
 
@@ -137,7 +142,7 @@
         </div>
 
         <div id="impress">
-            <div id="start" class="step step-time"  data-transition-duration="15000">
+            <div id="start" class="step step-time"  data-transition-duration="30000">
                 <h1>Welcome to CBMI</h1>
                 <p><img src="../static/images/regenstrief.png" height="100"/> </p>
                 <p class='hint_text'>Press <em>Spacebar</em> or Tab to Navigate (or wait for the Timer)</p>
@@ -149,11 +154,11 @@
                     <br/>
                     <div>If you have an idea for this board, contact Charity, <a href="mailto:cahilton@regenstrief.org">cahilton@regenstrief.org</a> or just contribute to the repo!</div>
             </div>
-            <div id="announcements" class="step step-time" data-x="4000" data-transition-duration="60000" style="font-family: 'Lato', sans-serif;">
+            <div id="announcements" class="step step-time" data-x="4000" data-transition-duration="120000">
                 <h1 style="text-decoration: underline">Announcements</h1>
                 <div id="announcements-wrapper" style="padding-top: 20px">
                     <h3 id="announcement" style="font-size:150%"></h3>
-                    <blockquote id="subtext"></blockquote>
+                    <div id="subtext"></div>
                 </div>
             </div>
             <!--right to left-->
@@ -162,16 +167,17 @@
                    <iframe class="iframe iframe-refresh iframe-refresh-often" src="https://gopher-monitor.regenstrief.org/g3_perf4j_event_monitor_v2.php" frameBorder="0"></iframe>
                </div>
            </div>
+            <!--
             <div id="nlpviz" class="step" data-x="8000"  data-transition-duration="30000">
                 <div>
                     <iframe class="iframe dark-iframe" src="../static/slides/nlpresearch/tumorprogression/src/main/resources/chart_progression.html" frameBorder="0"></iframe>
                 </div>
             </div>
-
-            <div id="posters" class="step" data-x="10000"  data-transition-duration="30000">
+-->
+            <div id="posters" class="step" data-x="10000"  data-transition-duration="120000">
                 <img id="posterSrc" src="" />
             </div>
-            <div id="allocations" class="step" data-x="-12000"  data-transition-duration="900000">
+            <div id="allocations" class="step" data-x="-12000"  data-transition-duration="360000">
                 <div>
                     <iframe class="iframe iframe-resize" src="../static/slides/allocation/index.html" frameBorder="0"></iframe>
                 </div>

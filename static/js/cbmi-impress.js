@@ -1,5 +1,6 @@
 var defaultTime = 30000;
 var impress = impress();
+var today = new Date();
 
 
 
@@ -28,6 +29,8 @@ $(document).ready(function(){
             $("#timeDiv").fadeOut();
         }
         timing = setInterval(impress.next, duration);
+
+        today = new Date();
     });
 
    function resizeIFrame() {
@@ -38,8 +41,8 @@ $(document).ready(function(){
 
     function resizePoster() {
         $("#posterSrc")
-            .css("width", "90%")
-            .css("height", "auto");
+            .css("width", "auto")
+            .css("height", "90%");
     }
 
     function resizeOther() {
@@ -83,12 +86,13 @@ $(document).ready(function(){
         currentAnnouncement = 0;
         totalAnnouncements = announcements.length;
         $("#announcement").text(announcements[0].announcement);
-        $("#subtext").text(announcements[0].subtext);
+        $("#subtext").html(announcements[0].subtext);
     });
 
     // posters
     var posters = [
-        "2014-03-25 Joint Summits Colonoscopy.pptx 2015-03-18 10-15-28.jpg"
+       // "2014-03-25 Joint Summits Colonoscopy.pptx 2015-03-18 10-15-28.jpg"
+        "tadpolediagram.png"
     ];
     var currentPoster = 0, totalPosters = posters.length;
     $("#posterSrc").attr("src", "../static/posters/" + posters[0]);
@@ -107,7 +111,7 @@ $(document).ready(function(){
                     currentAnnouncement = 0;
                 }
                 $("#announcement").text(announcements[currentAnnouncement].announcement);
-                $("#subtext").text(announcements[currentAnnouncement].subtext);
+                $("#subtext").html(announcements[currentAnnouncement].subtext);
                 $("#announcements-wrapper").fadeIn('fast');
 
             });
@@ -154,7 +158,7 @@ $(document).ready(function(){
 
     }, 30000);
 
-    var today = new Date();
+
     var dayOfMonth = today.getDate(),
         month = today.getMonth() + 1
     var af = (month === 4 && dayOfMonth === 1);
