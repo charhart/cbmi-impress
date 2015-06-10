@@ -1,22 +1,26 @@
 <html lang="en">
     <head>
         <title>Regenstrief CBMI</title>
-        <link href='http://fonts.googleapis.com/css?family=Playfair+Display:400,700|Belgrano|Crete+Round|IM+Fell+French+Canon+SC|Alegreya:400,700|Cutive' rel='stylesheet' type='text/css'>
         <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Lobster|Oswald|Roboto|Oxygen|Fjalla+One|Pacifico' rel='stylesheet' type='text/css'>
         <style>
             body{
                 width:1024px;
                 font-size: 36px;
-                font-family: 'Playfair Display', serif;
+                font-family: 'Roboto', sans-serif;
 				color: #454545;
 				text-shadow: 1px 1px 2px #787878;
                /* background: url(../static/images/hoffman.png); */
-                background: url(../static/images/bokeh3.jpg) no-repeat center center fixed;
+                background: url(../static/images/indy.gif) no-repeat center center fixed;
                 -webkit-background-size: cover;
                 -moz-background-size: cover;
                 -o-background-size: cover;
                 background-size: cover;
                 margin: 0px;
+            }
+
+            h2, h1 {
+                font-family: 'Pacifico', sans-serif;
             }
 
 
@@ -148,11 +152,16 @@
                 <p class='hint_text'>Press <em>Spacebar</em> or Tab to Navigate (or wait for the Timer)</p>
             </div>
             <!--left to right-->
+            <!--
             <div id="about" class="step step-time" data-x="-4000">
                 <h1>About This</h1>
                     <div>Find us on GitHub at <a href="https://github.com/cahilton/cbmi-impress">https://github.com/cahilton/cbmi-impress</a></div>
                     <br/>
                     <div>If you have an idea for this board, contact Charity, <a href="mailto:cahilton@regenstrief.org">cahilton@regenstrief.org</a> or just contribute to the repo!</div>
+            </div>
+            -->
+            <div id="webcam" class="step" data-x="-4000" data-transition-duration="240000">
+                <iframe class="iframe iframe-refresh iframe-refresh-often" seamless="true" src="https://www.truelook.com/tl/app/?u=rw1422633938#tl_live" frameBorder="0"></iframe>
             </div>
             <div id="announcements" class="step step-time" data-x="4000" data-transition-duration="120000">
                 <h1 style="text-decoration: underline">Announcements</h1>
