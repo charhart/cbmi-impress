@@ -4,19 +4,7 @@
     "subtext" : "<label>Join the Bike Club, <span style='text-decoration:underline'>Wednesday at 4pm</span> (meeting in the lobby of the HITS building) when the weather is good. </label><br/><br/><label>See Cindi for more details!</label>"
   },
   {
-    "announcement" : "Gopher 3.41 (5/18/15)",
-    "subtext" : "<label>Med Rec during Admission, Pharmacy Interface Support, SBIRT</label>"
-  },
-  {
     "announcement" : "CAITS IT Services",
     "subtext" : "<label>Phone: 317-274-5336</label><br/><label>Email: caits@iu.edu</label><br/><label>Web Form: https://caits.iu.edu/FootprintsWSF</label>"
-  },
-  {
-    "announcement" : "tEMR Upcoming Dates",
-    "subtext" : "<label>Development Complete: June 30th</label><br/><label>Testing and Production Deployment Complete: July 20th</label><br/><label>QSC Retreat: July 27th</label><br/><label>School Starts: August 24th<label>"
-  },
-  {
-    "announcement" : "Welcome Interns!",
-    "subtext" : "<label>Welcome to our summer interns: Maithili and Yashwanth!</label>"
   }
 ]
