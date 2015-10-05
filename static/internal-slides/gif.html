@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+
+<style>
+    html {
+       /* background: url(http://reactiongifs.me/wp-content/uploads/2014/06/happy-friday-piglet-car-ride.gif) no-repeat center center fixed; */
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+</style>
+<script type="text/javascript" src="../js/jquery/jquery.js"></script>
+<script>
+    var setImage = function() {
+        var d = new Date();
+        var n = d.getDay();
+        var h = d.getHours();
+
+        var img = "https://media.giphy.com/media/5r5J4JD9miis/giphy.gif";
+
+        if (n === 0) {
+            img = "https://media.giphy.com/media/ijaZWxvcVbI5y/giphy.gif";
+        } else if (n == 1) {
+            if (h > 11) {
+                img = "http://i.imgur.com/nZLFarX.gif";
+            } else {
+                img = "https://media.giphy.com/media/Mv6t9sASpgTEA/giphy.gif";
+            }
+        }  else if (n == 2) {
+            img = "https://media.giphy.com/media/D8WraFJpnYRRC/giphy.gif";
+        } else if (n == 3) {
+            img = "https://media.giphy.com/media/qYr8p3Dzbet5S/giphy.gif";
+        } else if (n == 4) {
+            img = "https://media.giphy.com/media/121rAYEbiE01oI/giphy.gif";
+        } else if (n == 5) {
+            if (h > 11) {
+                img = "https://media.giphy.com/media/b2GZmLzEvgcFO/giphy.gif";
+            } else {
+                img = "http://memeguy.com/photos/images/mrw-when-im-leaving-work-on-a-friday-97162.gif";
+            }
+
+        } else if (n == 6) {
+            img = "https://media.giphy.com/media/IY4Sek4eOx52o/giphy.gif"
+        }
+
+        $('html').css('background',
+                'url(' + img + ') no-repeat center center fixed')
+                .css('-webkit-background-size', 'cover')
+                .css('-moz-background-size', 'cover')
+                .css('-o-background-size', 'cover')
+                .css('background-size', 'cover');
+    };
+    setTimeout(function() {
+        setImage();
+
+
+    }, 60000);
+
+    setImage();
+</script>
+</body>
+</html>
