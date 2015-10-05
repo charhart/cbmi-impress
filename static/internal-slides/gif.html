@@ -22,31 +22,30 @@
         var n = d.getDay();
         var h = d.getHours();
 
-        var img = "https://media.giphy.com/media/5r5J4JD9miis/giphy.gif";
-
+        var img = "../images/gif/cats.gif";
         if (n === 0) {
-            img = "https://media.giphy.com/media/ijaZWxvcVbI5y/giphy.gif";
+            img = "../images/gif/sunday.gif";
         } else if (n == 1) {
             if (h > 11) {
-                img = "http://i.imgur.com/nZLFarX.gif";
+                img = "../images/gif/moonday.gif";
             } else {
-                img = "https://media.giphy.com/media/Mv6t9sASpgTEA/giphy.gif";
+                img = "../images/gif/monday.gif"
             }
         }  else if (n == 2) {
-            img = "https://media.giphy.com/media/D8WraFJpnYRRC/giphy.gif";
+            img = "../images/gif/tues.gif";
         } else if (n == 3) {
-            img = "https://media.giphy.com/media/qYr8p3Dzbet5S/giphy.gif";
+            img = "../images/gif/camel.gif";
         } else if (n == 4) {
-            img = "https://media.giphy.com/media/121rAYEbiE01oI/giphy.gif";
+            img = "../images/gif/thursday.gif";
         } else if (n == 5) {
             if (h > 11) {
-                img = "https://media.giphy.com/media/b2GZmLzEvgcFO/giphy.gif";
+                img = "../images/gif/drewcarey.gif";
             } else {
-                img = "http://memeguy.com/photos/images/mrw-when-im-leaving-work-on-a-friday-97162.gif";
+                img = "../images/gif/friday.gif";
             }
 
         } else if (n == 6) {
-            img = "https://media.giphy.com/media/IY4Sek4eOx52o/giphy.gif"
+            img = "../images/gif/saturday.gif"
         }
 
         $('html').css('background',
